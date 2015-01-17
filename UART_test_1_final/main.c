@@ -1,8 +1,7 @@
 /*
  * main.c
- *
- *  Created on: 17 џэт. 2015 у.
- *      Author: DDDD
+ *  Created on: 17 ian 2015
+ *      Author: Diana
  */
 
 #define F_CPU 8000000UL
