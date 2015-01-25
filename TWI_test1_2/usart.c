@@ -1,15 +1,11 @@
 /*
- * main.c
- *  Created on: 17 ian 2015
+ * usart.c
+ *
+ *  Created on: 24 џэт. 2015 у.
  *      Author: DDDD
  */
 
-#define F_CPU 8000000UL
-#define USART_BAUDRATE 19200
-#define BAUD_PRESCALE (((F_CPU / (USART_BAUDRATE * 16UL))) - 1)
-
-#include <avr/io.h>
-#include <avr/delay.h>
+#include "usart.h"
 
 void USART_Init(){
 	// Load lower 8-bits into the low byte of the UBRR register
@@ -29,13 +25,6 @@ void Tx_Char( char data ){
 void Tx_String(char *str){
 	while(*str){
 		Tx_Char(*str++);
-	}
-}
-void main(void){
-	USART_Init();
-	while(1){
-		Tx_Char('F');
-		Tx_String(" ABCDEF ");
 	}
 }
 
