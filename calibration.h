@@ -25,6 +25,8 @@ extern float gainZ3_s[];
 
 //void getDataForCalibration();
 void Calibrate();
+//function just for testing!!!!!
+void Calibrate1();
 
 
 #endif /* CALIBRATION_H_ */
